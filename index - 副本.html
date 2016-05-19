@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>绿世界定制营销管理系统</title>
+<LINK href="./images/css.css" type=text/css rel=stylesheet>
+<LINK rel="icon" href="./images/gw.ico">
+    <script type="application/javascript">
+        function getCookie(NameOfCookie)
+        {
+            if (document.cookie.length > 0)
+            {
+                var begin = document.cookie.indexOf(NameOfCookie+"=");
+                if (begin != -1)
+                {
+                    begin += NameOfCookie.length+1;//cookie值的初始位置
+                    var end = document.cookie.indexOf(";", begin);//结束位置
+                    if (end == -1) end = document.cookie.length;//没有;则end为字符串结束位置
+                    return encodeURIComponent(document.cookie.substring(begin, end));
+                }
+            }
+            return null;
+        }
+
+        function user_is_login(){
+            var is_login=getCookie('is_login');
+            if(is_login==1 || is_login==2){
+                self.location.href="wdadmin/index.php?flag="+is_login;
+            }
+        }
+
+//        延时1s再执行
+        setTimeout("user_is_login()", 1000);
+
+    </script>
+</head>
+<body scroll=no background='./images/gw.jpg'>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="139">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="261">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" height="261">
+		<tr>
+			<td height="1">
+			<img border="0" src="./images/blank.gif" width="154" height="1"></td>
+			<td height="1">
+			<img border="0" src="./images/blank.gif" width="684" height="1"></td>
+			<td height="1">
+			<img border="0" src="./images/blank.gif" width="186" height="1"></td>
+		</tr>
+		  <tr>
+			<td>&nbsp;</td>
+			<td valign="top">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				  <tr>
+					<td height="25" colspan="3"></td>
+				  </tr>
+				  <tr>
+					<td height="148" colspan="3" align="center"><embed src="./images/banner.swf" quality=High type="application/x-shockwave-flash" width="595" height="154" wmode="transparent" swliveconnect="true"></embed>					</td>
+				  </tr>
+				  <tr>
+					<td height="39" colspan="3" align="center" style="font-size:14px; font-weight:bold;">
+                  	<A href='wdadmin/login1.php?Lang=cn' >中国3(China)33333</A></td>
+				  </tr>
+				   <tr>
+					<td width="47%" height="39" align="right" style="font-size:14px; font-weight:bold;">
+                  	<A href='wdadmin/logind.php?Lang=cn' >店铺系统</A></td>
+					<td width="6%" height="39" align="right" style="font-size:14px; font-weight:bold;">
+                  	</td>
+				    <td width="47%" align="left" style="font-size:14px; font-weight:bold;">
+					<A href='wdadmin/loginzmd.php?Lang=cn' >客户系统</A></td>
+			      </tr>
+				</table>
+			</td>
+			<td align="right">&nbsp;</td>
+		  </tr>
+		</table>
+	</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
